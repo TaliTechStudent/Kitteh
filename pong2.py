@@ -47,7 +47,7 @@ def draw():
 
 def collisions():
     global y_speed, x_speed
-   # edge of screeeeeeeeeeeeeeen collisions
+   # edge of screen collisions
     if cube.y >= HEIGHT:
             y_speed *= -1
     if cube.y <= 0:
