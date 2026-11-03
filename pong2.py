@@ -58,12 +58,14 @@ def collisions():
             y_speed *= -1
     if cube.x >= WIDTH:
             x_speed *= -1
-            opponent_score+=1
+            player_score+=1
+            cube.center = (WIDTH/2, HEIGHT/2)
     if cube.x <= 0:
             x_speed *=-1
-            player_score+=1
-            cube.x = cube.center[0]
-            cube.y = cube.center[1]
+            opponent_score+=1
+            
+            cube.center = (WIDTH/2, HEIGHT/2)
+
 
 
    # paddle collisions
@@ -89,5 +91,3 @@ while True:
     cube.x += x_speed * 2
     cube.y += y_speed * 2
     draw()
-    
-
