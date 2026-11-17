@@ -13,9 +13,12 @@
 3. Install the dependencies
 `uv pip install -r requirements.txt`
 
-### How to run the game
-`uv run pong2.py`
+### How to run the game(s)
+`uv run ball.py`
 
+`uv run tictactoe.py`
+
+`uv run pong.py`
 ## About activating your environment
 - If you use `uv run main.py` ➡️ No activation needed. uv handles it instantly
 - If you use `python main.py` ➡️ Activation is required first, otherwise your computer will look for pygame in the global system path and fail.
